@@ -361,8 +361,8 @@ static void fts_gesture_report(struct input_dev *input_dev, int gesture_id)
     }
     /* report event key */
 	if (gesture_id == 0x27) {
-		ts_data->single_tap_pressed = 1;
-		sysfs_notify(&ts_data->dev->kobj, NULL, "fts_gesture_single_tap_pressed");
+		fts_data->single_tap_pressed = 1;
+		sysfs_notify(&fts_data->dev->kobj, NULL, "fts_gesture_single_tap_pressed");
 	} else if (gesture != -1) {
         FTS_DEBUG("Gesture Code=%d", gesture);
         input_report_key(input_dev, gesture, 1);
@@ -590,3 +590,4 @@ int fts_gesture_exit(struct fts_ts_data *ts_data)
     FTS_FUNC_EXIT();
     return 0;
 }
+
