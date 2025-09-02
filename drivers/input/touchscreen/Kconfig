@@ -22,8 +22,5 @@ config TOUCHSCREEN_MT6985_ALPHA_SUPPORT
 
 source "$(KCONFIG_EXT_PREFIX)drivers/input/touchscreen/NT36532/Kconfig"
 source "$(KCONFIG_EXT_PREFIX)drivers/input/touchscreen/FT3519/Kconfig"
-source "$(KCONFIG_EXT_PREFIX)drivers/input/touchscreen/FT3683G/Kconfig"
-source "$(KCONFIG_EXT_PREFIX)drivers/input/touchscreen/EPH861/Kconfig"
-source "$(KCONFIG_EXT_PREFIX)drivers/input/touchscreen/touchpanel_event_notify/Kconfig"
 
 endif

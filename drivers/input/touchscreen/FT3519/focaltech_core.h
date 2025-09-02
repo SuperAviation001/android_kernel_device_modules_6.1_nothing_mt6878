@@ -64,7 +64,7 @@
 #include <linux/kthread.h>
 #include <linux/dma-mapping.h>
 #include "focaltech_common.h"
-#include "../touchpanel_event_notify/touchpanel_event_notify.h"
+#include "touchpanel_event_notify/touchpanel_event_notify.h"
 
 /*****************************************************************************
 * Private constant and macro definitions using #define
@@ -304,8 +304,6 @@ struct fts_ts_data {
 #elif defined(CONFIG_FB)
     struct notifier_block fb_notif;
 #endif
-
-    int single_tap_pressed;
 };
 
 

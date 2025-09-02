@@ -22,3 +22,4 @@ focaltech_tp-y += focaltech_flash/focaltech_upgrade_ft3519t.o
 focaltech_tp-y += focaltech_test/focaltech_test.o
 focaltech_tp-y += focaltech_test/focaltech_test_ini.o
 focaltech_tp-y += focaltech_test/supported_ic/focaltech_test_ft3519t.o
+focaltech_tp-y += touchpanel_event_notify/touchpanel_event_notify.o
